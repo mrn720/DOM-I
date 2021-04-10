@@ -40,3 +40,46 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+/* Selectors */
+
+const container = document.querySelector('.container')
+const anchors = container.firstElementChild.firstElementChild.firstElementChild
+const newAnchor = document.createElement('a')
+
+const anchor1 = anchors
+anchor1.textContent = "Services"
+anchor1.style.color = 'green'
+
+const anchor2 = anchor1.nextElementSibling
+anchor2.textContent = "Product"
+anchor2.style.color = 'green'
+
+const anchor3 = anchor2.nextElementSibling
+anchor3.textContent = "Vision"
+anchor3.style.color = 'green'
+
+const anchor4 = anchor3.nextElementSibling
+anchor4.textContent = "Features"
+anchor4.style.color = 'green'
+
+const anchor5 = anchor4.nextElementSibling
+anchor5.textContent = "About"
+anchor5.style.color = 'green'
+
+const anchor6 = anchor5.nextElementSibling
+anchor6.textContent = "Contact"
+anchor6.style.color = 'green'
+
+const nav = document.querySelector('nav')
+nav.prependChild(newAnchor)
+anchor0 = nav.firstElementChild
+anchor0.textContent = "First"
+anchor0.style.color = 'green'
+
+nav.appendChild(newAnchor)
+const anchor7 = nav.lastElementChild
+anchor7.textContent = "Last"
+anchor7.style.color = 'green'
+
