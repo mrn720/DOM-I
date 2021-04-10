@@ -134,3 +134,23 @@ fifthHeader.textContent = "Vision"
 const fifthPara = para5.lastElementChild
 fifthPara.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
+
+
+const contactInfo = document.querySelector('.contact')
+
+const cont1 = contactInfo.firstElementChild
+cont1.textContent = "Contact"
+
+const cont2 = cont1.nextElementSibling
+cont2.textContent = "123 Way 456 Street Somewhere, USA"
+
+const cont3 = cont2.nextElementSibling
+cont3.textContent = "1 (888) 888-8888"
+
+const cont4 = cont3.nextElementSibling
+cont4.textContent = "sales@greatidea.io"
+
+
+
+const footerInfo = container.lastElementChild.firstElementChild
+footerInfo.textContent = "Copyright Great Idea! 2018"
